@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang=”pt-br” xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>| AP ENGENHARIA - UC 12 |</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap para testes-->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color: #cac4ce;">
+<!-- ========================================================================================================== -->
+<header>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="nav-link active">
+        <a class="navbar-brand" href="#">
+            <img src="/logo.jpg" alt="" width="30" height="24" >
+        </a></div>
+    <div class="container">
+
+        <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/" >Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/clientes" style="color:#FBD603;">Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/cadastrarCliente" style="color:#FBD603;">Cadastrar Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/parceiros" style="color:#FBD603;">Parceiros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/cadastrarParceiro" style="color:#FBD603;">Cadastrar Parceiros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/terceirizados" style="color:#FBD603;">Terceirizados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/cadastrarTerceirizado" style="color:#FBD603;">Cadastrar Terceirizados</a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav justify-content-end">
+        <a class="nav-link" href="https://github.com/lipollis/SENAI_UC12-AP_Eng">
+            <i class="fa fa-github" style="font-size:40px;color:red;"></i></a>
+    </div>
+</nav>
+
+</header>
+<!-- ========================================================================================================== -->
+<div class="container">
+    <br> <br>
+
+    <div class="row">
+        <div class="col">
+            <div class="card border-warning text-center">
+                <div class="card-header card-title bg-secondary" >
+                    <h3 style="text-transform: uppercase;color:#C9C9C9;">Clientes</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Módulo responsável pelos clientes do escritório AP ENGENHARIA.</p>
+                    <a href="/clientes" class="btn " style="background-color:#000000;color:#A4814C;">Listar Clientes</a>
+                    <a href="/cadastrarCliente" class="btn " style="background-color:#000000;color:#C9C9C9;">Cadastrar Clientes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card border-warning text-center">
+                <div class="card-header  card-title bg-secondary">
+                    <h3 style="text-transform: uppercase;color:#C9C9C9;">Parceiros</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Módulo responsável pelos parceiros do escritório AP ENGENHARIA.</p>
+                    <a href="/parceiros" class="btn " style="background-color:#000000;color:#A4814C;">Listar Parceiros</a>
+                    <a href="/cadastrarParceiro" class="btn " style="background-color:#000000;color:#C9C9C9;">Cadastrar Parceiros</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card border-warning text-center">
+                <div class="card-header  card-title bg-secondary">
+                    <h3 style="text-transform: uppercase;color:#C9C9C9;">Terceirizados</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Módulo responsável pelos terceirizados do escritório AP ENGENHARIA.</p>
+                    <a href="/terceirizados" class="btn " style="background-color:#000000;color:#A4814C;">Listar Serviços</a>
+                    <a href="/cadastrarTerceirizado" class="btn " style="background-color:#000000;color:#C9C9C9;">Cadastrar Serviços</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ========================================================================================================== -->
+        <!-- 	nova busca -->
+        <div class="row justify-content-center">
+            <div class="col justify-content-center ">
+                <br> <br>
+                <div class="card border-warning text-center card w-100 justify-content-center"  style="margin: 0 auto;">
+                    <div class="card-header bg-secondary">
+                        <h3 style="text-transform: uppercase;color:#C9C9C9;">Pesquisar no sistema</h3>
+                    </div>
+
+
+
+                    <form class="form-inline" method="post">
+
+                        <div class="row form-group justify-content-center w-100 p-2">
+                            <div class="col col-14 col-md-2">
+                                <label for="cars" class="my-3 p-2 w-100">
+                                    <h5>Tipo de busca:</h5>
+                                </label>
+                            </div>
+
+                            <div class="col col-14 col-md-2">
+                                <select name="nome" id="nome"
+                                        class="custom-select my-3 p-2 w-100" required>
+                                    <option value="">Escolher...</option>
+                                    <option value="todos">Todos</option>
+                                    <option value="nomeCliente">Cliente</option>
+                                    <option value="nomeProjeto">Projeto</option>
+                                    <option value="nomeParceiro">Parceiro</option>
+                                    <option value="nomeTerceirizado">Terceirizado</option>
+                                </select>
+                            </div>
+
+                            <div class="col col-14 col-md-4">
+                                <input class="form-control form-control-lg my-3 p-2 w-100"
+                                       type="search" placeholder="Insira sua pesquisa..."
+                                       aria-label="Pesquisar" name="buscar" id="buscar" required>
+                            </div>
+
+                            <div class="col col-14 col-md-2">
+                                <button class="btn my-3 p-2 w-100" type="submit"
+                                        style="background-color:#000000;color:#A4814C;">Pesquisar</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+<!-- ========================================================================================================== -->
+                <div class="row form-group justify-content-center w-100 p-2">
+                    <h4>
+                        <i><span th:text="${mensagem}"></span></i>
+                    </h4>
+                </div>
+
+                <div class="row form-group justify-content-center w-100 p-2">
+                    <table class="table table-hover table-responsive w-auto table-striped">
+
+                        <tbody>
+                        <tr th:each="cliente : ${clientes}">
+                            <td><a th:href="${(#mvc.url('CC#detalhesCliente').arg(0, cliente.id)).build()}">
+                                <span th:text="${cliente.nome}"></span></a> - em <i>clientes.</i></td>
+
+
+                        </tr>
+                        <tr th:each="parceiro : ${parceiros}">
+                            <td><a th:href="${(#mvc.url('PC#detalhesParceiro').arg(0, parceiro.id)).build()}">
+                                <span th:text="${parceiro.nome}"></span></a> - em <i>parceiros.</i></td>
+                        </tr>
+
+
+                        <tr th:each="projeto : ${projetos}">
+                            <td><span th:text="${projeto.nome}">
+                            </span> - <i>em projetos.</i></td>
+                        </tr>
+
+                        <tr th:each="terceirizado : ${terceirizados}">
+                            <td><a th:href="${(#mvc.url('TC#detalhesTerceirizado').arg(0, terceirizado.id)).build()}">
+                                <span th:text="${terceirizado.nome}"></span></a> - <i>em
+                                terceirizados.</i></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+<!-- ========================================================================================================== -->
+    </div>
+</div>
+
+<footer>
+
+    <div class="footer-copyright fixed-bottom bg-dark text-center py-3">
+        <div class="row justify-content-center">
+            <a class="" href="https://github.com/lipollis" >
+                <i class="fa fa-github" style="font-size:40px;color:#FBD603;margin:10px;"></i></a>
+
+            <a class="" href="https://www.linkedin.com/in/alinepollisbeck/">
+                <i class="fa fa-linkedin" style="font-size:40px;color:#FBD603;margin:10px;"></i></a>
+
+            <a class="" href="https://www.facebook.com/aline.pollis/">
+                <i class="fa fa-facebook-square" style="font-size:40px;color:#FBD603;margin:10px;"></i></a>
+
+            <a class="" href="https://www.instagram.com/alinepollis/">
+                <i class="fa fa-instagram" style="font-size:40px;color:#FBD603;margin:10px;"></i></a>
+        </div>
+			<span class="text-light align-middle">| App AP ENGENHARIA - UC 12 | - ©
+				2022 Copyright: Aline Pollis</span>
+    </div>
+
+</footer>
+
+<!--JavaScript bootstrap-->
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+
+</script>
+</body>
+</html>

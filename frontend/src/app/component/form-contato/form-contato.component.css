@@ -1,0 +1,101 @@
+.container-contato{
+    background-color: var(--backgroud);
+    border: 0;
+    height: 550px;
+    padding-top: 5%;
+    /* width: 500px;
+    float: right; */
+  }
+  
+  label{
+      color: var(--show);
+      font-family: sans-serif;
+  }
+  
+  h1{
+      margin:0px 0px 20px;
+      color:var(--show);
+      font-family: sans-serif;
+      transition: 0.3s ease-in-out;
+  }
+  
+  #form{
+      background-color: var(--backgroud);
+      padding: 30px;
+      /* Aqui q está deixando a margem centralizada */
+      margin: 0 auto;
+      /* Dá uma largura máx de 400px, para ser reponsivo usar % */
+      max-width: 400px;
+  }
+  
+  /* CONFIGURAÇÃO DOS ESPAÇO DO INPUT DO FORMULÁRIO */
+  input[type='text'],
+  input[type='email'],
+  input[type='text']{
+      width: 100%;
+      padding: 10px;
+      background: none;
+      margin-bottom: 30px;
+      border:none;
+      /* Borda do navegador nos elementos, na caixa do input */
+      outline: none;
+      color: yellow;
+      border-bottom: 1px solid var(--wine);
+      /* transition: 0.3s ease-in-out; */
+  }
+  
+  /* ESTILIZAR OS BOTÕES */
+  .btn{
+      padding: 10px 12px;
+      border-radius: 5px;
+      border:none;
+      background: none;
+      color: wheat;
+      background-color: var(--wine);
+  }
+  button{
+      margin: 10px;
+  }
+  
+  .btn.bk-btn{
+    background-color: var(--wine);
+    color: var(--show);
+  }
+  /* DIV PARA ALINHAR OS BOTÕES NO CENTRO */
+  .div-btn{
+      text-align: center;
+  }
+  
+  /* ======================================
+              FORMULÁRIO HOVER
+  ========================================= */
+  .hvr-text:hover{
+      color: var(--show);
+  }
+  
+  .bk-btn:hover{
+      background-color: aliceblue;
+      color:var(--wine);
+      font-weight: bold;
+  }
+  
+  .input-bk:hover{
+      background-color: var(--wine);
+      border-radius: 5px;
+  }
+  /* ======================================
+              FORMULÁRIO ANIMAÇÃO
+  ========================================= */
+  /* .slide-form{
+      animation-duration: 1s;
+      animation-name: slidein;
+  }
+  
+  @keyframes slidein{
+      from{
+          margin-top: -100%;
+      }
+      to{
+          margin-top: 1%;
+      }
+  } */

@@ -100,7 +100,7 @@ ng g c components/backend/projeto/projeto-update
 ng g c components/backend/projeto/projeto-read
 ng g c components/frontend/tabbar
 ng g c components/frontend/home
-ng g c components/frontend/header
+ng g c components/frontend/logo
 ng g c components/frontend/footer
 ng g c components/frontend/menu-home
 ng g c components/frontend/info

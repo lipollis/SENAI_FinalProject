@@ -51,13 +51,13 @@ import { ProjetoUpdateComponent } from './components/backend/projeto/projeto-upd
 import { ProjetoReadComponent } from './components/backend/projeto/projeto-read/projeto-read.component';
 import { TabbarComponent } from './components/frontend/tabbar/tabbar.component';
 import { HomeComponent } from './components/frontend/home/home.component';
-import { HeaderComponent } from './components/frontend/header/header.component';
 import { FooterComponent } from './components/frontend/footer/footer.component';
 import { InfoComponent } from './components/frontend/info/info.component';
 import { SobreComponent } from './components/frontend/sobre/sobre.component';
 import { PortifolioProjetoComponent } from './components/frontend/portifolio-projeto/portifolio-projeto.component';
 import { PortifolioServicoComponent } from './components/frontend/portifolio-servico/portifolio-servico.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LogoComponent } from './components/frontend/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -81,12 +81,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProjetoReadComponent,
     TabbarComponent,
     HomeComponent,
-    HeaderComponent,
     FooterComponent,
     InfoComponent,
     SobreComponent,
     PortifolioProjetoComponent,
-    PortifolioServicoComponent
+    PortifolioServicoComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

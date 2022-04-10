@@ -26,11 +26,6 @@ import { SobreComponent } from './components/frontend/sobre/sobre.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'info', component: InfoComponent },
-  { path: 'portifolioprojeto', component: PortifolioProjetoComponent },
-  { path: 'portifolioservico', component: PortifolioServicoComponent },
-  { path: 'sobre', component: SobreComponent },
   {
     path: '', component: BnavComponent, canActivate: [AuthGuard], children: [
       { path: 'home', component: BhomeComponent },
@@ -50,7 +45,12 @@ const routes: Routes = [
       { path: 'projetos/update/:id',            component:   ProjetoUpdateComponent },
       { path: 'projetos/read/:id',              component:     ProjetoReadComponent },
     ]
-  }
+  },
+  { path: 'index', component: HomeComponent },
+  { path: 'info', component: InfoComponent },
+  { path: 'portifolioprojeto', component: PortifolioProjetoComponent },
+  { path: 'portifolioservico', component: PortifolioServicoComponent },
+  { path: 'sobre', component: SobreComponent }
 ];
 
 @NgModule({

@@ -1,1 +1,83 @@
-<p>projeto-read works!</p>
+<div class="container mat-elevation-z8">
+    <h1 class="full-width">Leitura de projeto</h1>
+    <img class="full-width" src="assets/img/chamado-create.svg" alt="projeto image">
+ 
+    <form class="form">
+       <mat-form-field class="full-width" appearance="outline">
+         <mat-label>Título do projeto</mat-label>
+         <input 
+         [disabled]="true"
+         [(ngModel)]="projeto.titulo"
+         name="titulo"
+         matInput 
+         placeholder=" ">
+       </mat-form-field>
+     </form>
+ 
+     <div class="status-prioridade">
+       <mat-form-field appearance="outline">
+          <mat-label>STATUS ({{ retornaStatus(projeto.status) }})</mat-label>
+          <mat-select 
+          [disabled]="true"
+          [(ngModel)]="projeto.status"
+          name="status">
+            <mat-option value="0">ABERTO</mat-option>
+            <mat-option value="1">EM ANDAMENTO</mat-option>
+            <mat-option value="2">ENCERRADO</mat-option>
+          </mat-select>
+        </mat-form-field>
+ 
+        <mat-form-field appearance="outline">
+          <mat-label>PRIORIDADE ({{ retornaPrioridade(projeto.prioridade) }})</mat-label>
+          <mat-select 
+          [disabled]="true"
+          [(ngModel)]="projeto.prioridade"
+          name="prioridade">
+            <mat-option value="0">BAIXA</mat-option>
+            <mat-option value="1">MÉDIA</mat-option>
+            <mat-option value="2">ALTA</mat-option>
+          </mat-select>
+        </mat-form-field>
+     </div>
+ 
+     <div class="tecnico">
+       <mat-form-field class="full-width" appearance="outline">
+          <mat-label>TÉCNICO ({{ projeto.nomeTecnico }})</mat-label>
+          <mat-select 
+          [disabled]="true"
+          [(ngModel)]="projeto.tecnico"
+          name="tecnico">
+            <mat-option>{{ projeto.nomeTecnico }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+     </div>
+ 
+     <div class="cliente">
+       <mat-form-field class="full-width" appearance="outline">
+          <mat-label>CLIENTE ({{ projeto.nomeCliente }})</mat-label>
+          <mat-select 
+          [disabled]="true"
+          [(ngModel)]="projeto.cliente"
+          name="cliente">
+            <mat-option>{{ projeto.nomeCliente }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+     </div>
+ 
+     <form class="form">  
+       <mat-form-field class="full-width" appearance="outline">
+         <mat-label>Deixe uma observação</mat-label>
+         <textarea 
+         [disabled]="true"
+         [(ngModel)]="projeto.observacoes"
+         name="observacoes"
+         class="observacoes" 
+         matInput 
+         ></textarea>
+       </mat-form-field>
+     </form>
+ 
+     <button routerLink="../../" class="full-width mat-elevation-z4" mat-stroked-button color="warn">Retornar</button>
+ 
+     <p class="full-width"> </p>
+ </div>

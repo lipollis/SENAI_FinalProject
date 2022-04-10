@@ -1,3 +1,10 @@
+# Implementação do backend 
+- Uso do SpringBoot e Maven dependências
+- Uso de JWT e Spring Security para validação e autenticação de usuário
+
+<br><br>
+<div align="center">:sunny::sunny::sunny::sunny::sunny:</div>
+<br><br>
 
 ## Criação dos enums: Perfil, Prioridade e Status
 #### São um conjunto de valores constantes e pré-definidos.
@@ -2087,10 +2094,10 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
     }
 }
 ```
-#### É usado a anotação '@PreAuthorize("hasAnyRole('ADMIN')")' nos endpoints em TecnicoResource
+- É usado a anotação '@PreAuthorize("hasAnyRole('ADMIN')")' nos endpoints em TecnicoResource
 
-#### Para teste no Postman, criar requisição de login, usar um json com email e senha, onde após a autenticação é gerado um token que pode ser acessado na guia Headers do resultado no Postman.
-#### Acessar qualquer outra requisição, ir em Headers do Postman (na guia de inserção de parâmetros) e no campo key: Authorization, value: (token gerado). Assim será habilitado o acesso as informações.
+- Para teste no Postman, criar requisição de login, usar um json com email e senha, onde após a autenticação é gerado um token que pode ser acessado na guia Headers do resultado no Postman.
+- Acessar qualquer outra requisição, ir em Headers do Postman (na guia de inserção de parâmetros) e no campo key: Authorization, value: (token gerado). Assim será habilitado o acesso as informações.
 
 ### HEROKU
 - Criar o app
@@ -2104,7 +2111,7 @@ heroku -v
 heroku login
 ```
 ```
-heroku git:remote -a helpdesk-lipollis
+heroku git:remote -a apengenharia
 ```
 ```
 git remote -v

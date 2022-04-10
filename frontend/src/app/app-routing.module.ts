@@ -20,14 +20,20 @@ import { TecnicoUpdateComponent } from './components/backend/tecnico/tecnico-upd
 
 import { HomeComponent } from './components/frontend/home/home.component';
 import { InfoComponent } from './components/frontend/info/info.component';
-import { PortifolioProjetoComponent } from './components/frontend/portifolio-projeto/portifolio-projeto.component';
-import { PortifolioServicoComponent } from './components/frontend/portifolio-servico/portifolio-servico.component';
+import { PortifolioComponent } from './components/frontend/portifolio/portifolio.component';
+import { ServicoComponent } from './components/frontend/servico/servico.component';
 import { SobreComponent } from './components/frontend/sobre/sobre.component';
 
 const routes: Routes = [
+  { path: 'principal', component: HomeComponent },
+  { path: 'info', component: InfoComponent },
+  { path: 'port', component: PortifolioComponent },
+  { path: 'servico', component: ServicoComponent },
+  { path: 'sobre', component: SobreComponent },
   { path: 'login', component: LoginComponent },
   {
-    path: '', component: BnavComponent, canActivate: [AuthGuard], children: [
+    // path: '', component: BnavComponent, canActivate: [AuthGuard], children: [
+      path: '', component: BnavComponent, children: [
       { path: 'home', component: BhomeComponent },
 
       { path: 'tecnicos',            component:   TecnicoListComponent },
@@ -45,12 +51,7 @@ const routes: Routes = [
       { path: 'projetos/update/:id',            component:   ProjetoUpdateComponent },
       { path: 'projetos/read/:id',              component:     ProjetoReadComponent },
     ]
-  },
-  { path: 'index', component: HomeComponent },
-  { path: 'info', component: InfoComponent },
-  { path: 'portifolioprojeto', component: PortifolioProjetoComponent },
-  { path: 'portifolioservico', component: PortifolioServicoComponent },
-  { path: 'sobre', component: SobreComponent }
+  }
 ];
 
 @NgModule({

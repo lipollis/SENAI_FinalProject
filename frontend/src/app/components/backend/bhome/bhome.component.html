@@ -1,7 +1,27 @@
-
-
-
 <div class="container">
+
+    <ngb-accordion #acc="ngbAccordion">
+        <ngb-panel id="toggle-1" title="Sobre o sistema">
+          <ng-template ngbPanelContent>
+            
+                <ul>
+                    <li>É necessário realizar o login no sistema para acessar a aplicação</li>
+                    <li>A senha deve possuir pelo menos três caracteres</li>
+                    <li>Um cliente ou técnico não pode ser excluído se houver algum projeto atribuído</li>
+                </ul>
+            
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="toggle-2" title="AP Engenharia">
+          <ng-template ngbPanelContent>
+              <p>
+                Empresa qualificada para realizar o seu projeto de instalação elétrica.
+              </p>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+      
+      <hr/>
 
 </div>
 

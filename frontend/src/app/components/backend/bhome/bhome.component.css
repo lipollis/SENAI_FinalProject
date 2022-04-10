@@ -1,0 +1,14 @@
+.container{
+  max-height: 100%;
+  height: 50rem;
+  width: 60%;
+}
+  
+
+ul, li, p{
+  color: var(--back-secondary);
+}
+
+button.accordion-button.ng-star-inserted::after{
+  background-color: var(--back-secondary);
+}

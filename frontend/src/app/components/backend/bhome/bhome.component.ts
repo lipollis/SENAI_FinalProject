@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+import {NgbAccordionConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-bhome',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BhomeComponent implements OnInit {
 
-  constructor() { }
+  color: ThemePalette = 'primary';
+  mode: ProgressSpinnerMode = 'determinate';
+  value = 50;
+
+  constructor( ) { }
 
   ngOnInit(): void {
   }

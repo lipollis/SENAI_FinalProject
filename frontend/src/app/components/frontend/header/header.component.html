@@ -1,1 +1,25 @@
-<p>header works!</p>
+<div class="cabecalho">
+    <script src="./header.componet.js"></script>
+
+    <img src="./assets/img/logo.svg" class="abrir_modal img_modal" ng-click="abrirModal()" />
+
+    <!-- <div class="fundo_modal" id="modal-ap">
+        <div class="modal-imagem-tela">
+            <img src="./assets/img/logo.svg" />
+            <span class="fechar" ng-click="fecharModal()">&times;</span>
+        </div>
+    </div> -->
+
+
+</div>
+
+<script>
+    function abrirModal() {
+        document.getElementById('modal-ap').style.top = "0";
+        document.getElementById('modal-ap').style.display = "block";
+    }
+    function fecharModal() {
+        document.getElementById('modal-ap').style.top = "-100%";
+        document.getElementById('modal-ap').style.display = "none";
+    }
+</script>

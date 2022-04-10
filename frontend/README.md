@@ -71,6 +71,13 @@ npm i ngx-mask --save
 ```typescript
 npm i @auth0/angular-jwt --save
 ```
+#### Instalação Font Awesome
+```
+npm i @fortawesome/angular-fontawesome
+npm install @fortawesome/fontawesome-svg-core
+npm install @fortawesome/free-solid-svg-icons
+npm install @fortawesome/angular-fontawesome@0.10.x
+```
 
 ### Criando componentes
 ```typescript

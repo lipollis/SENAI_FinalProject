@@ -29,6 +29,7 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Componentes do projeto
 import { BnavComponent } from './components/backend/bnav/bnav.component';
@@ -52,7 +53,6 @@ import { TabbarComponent } from './components/frontend/tabbar/tabbar.component';
 import { HomeComponent } from './components/frontend/home/home.component';
 import { HeaderComponent } from './components/frontend/header/header.component';
 import { FooterComponent } from './components/frontend/footer/footer.component';
-import { MenuHomeComponent } from './components/frontend/menu-home/menu-home.component';
 import { InfoComponent } from './components/frontend/info/info.component';
 import { SobreComponent } from './components/frontend/sobre/sobre.component';
 import { PortifolioProjetoComponent } from './components/frontend/portifolio-projeto/portifolio-projeto.component';
@@ -83,7 +83,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    MenuHomeComponent,
     InfoComponent,
     SobreComponent,
     PortifolioProjetoComponent,
@@ -96,6 +95,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     // Forms
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     // Requisições http
     HttpClientModule,
     // Angular Material

@@ -4,6 +4,11 @@
     padding: 1rem;
     border-radius: .6rem;
  }
+
+ div.container.mat-elevation-z8{
+   margin-top: 5%;
+   margin-bottom: 15%;
+ }
  
  .fullWidth {
     width: 100%;
@@ -22,6 +27,8 @@
     text-align: center;
  }
  
+
+
  img {
     height: 12rem;
     margin: auto;

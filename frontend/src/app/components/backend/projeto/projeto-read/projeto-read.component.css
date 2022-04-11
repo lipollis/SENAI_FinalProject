@@ -4,6 +4,11 @@
     padding: 1rem;
     border-radius: 1rem;
  }
+
+ div.container.mat-elevation-z8{
+   margin-top: 5%;
+   margin-bottom: 15%;
+ }
  
  .full-width {
     width: 100%;

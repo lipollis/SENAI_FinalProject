@@ -1,7 +1,7 @@
 
 <div align="right"><img src="https://github.com/lipollis/Imagens-Git/blob/main/sun.png" /></div>
 
-<h1 align="center"> SENAI_UC14 </h1>
+<h1 align="center"> SENAI_PROJETO INTEGRADOR </h1>
 <h2 align="center"> AP ENGENHARIA-SpringBoot </h2>
 
 <h4 align="center"> 
@@ -26,7 +26,7 @@
 <h2 align=""> LINK - ONLINE PROJECT AVAILABLE: </h2>
   <div align="center"><a href="https://apengenharia.herokuapp.com/" target="_blank" align-items-center> 
     <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"> </img></a></div>
-  <div align="center"><a href="" target="_blank" align-items-center>
+  <div align="center"><a href="https://apengenharia.netlify.app/" target="_blank" align-items-center>
     <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"> </img></a></div>
     
 <br>

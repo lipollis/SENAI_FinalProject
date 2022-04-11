@@ -39,6 +39,9 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  voltar(){
+    this.router.navigate(['principal'])
+  }
   validaCampos(): boolean {
     return this.email.valid && this.senha.valid
   }

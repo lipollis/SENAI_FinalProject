@@ -20,7 +20,7 @@ public class Tecnico extends Pessoa{
     // ATRIBUTOS
     @JsonIgnore // IMPEDE A SERIALIZAÇÃO DAS INFORMAÇÕES QUANDO FIZER REQUISIÇÃO GET
     @OneToMany(mappedBy = "tecnico") // UM TÉCNICO PARA MUITOS CHAMADOS - mapeado com o nome tecnico em Projeto
-    private List<Projeto> chamados = new ArrayList<>();
+    private List<Projeto> projetos = new ArrayList<>();
 
     // CONSTRUTOR DA SUPER CLASSE
     public Tecnico() {
@@ -45,11 +45,11 @@ public class Tecnico extends Pessoa{
     }
 
     // GETTER E SETTER
-    public List<Projeto> getChamados() {
-        return chamados;
+    public List<Projeto> getProjetos() {
+        return projetos;
     }
 
-    public void setChamados(List<Projeto> chamados) {
-        this.chamados = chamados;
+    public void setProjetos(List<Projeto> projetos) {
+        this.projetos = projetos;
     }
 }

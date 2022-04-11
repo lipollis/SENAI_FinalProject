@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(value = "/chamados") //localhost:8080/projetos
+@RequestMapping(value = "/projetos") //localhost:8080/projetos
 public class ProjetoResource {
 
     @Autowired

@@ -495,7 +495,7 @@ public class Tecnico extends Pessoa{
 ```
 ```
 #application-dev.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/helpdesk
+spring.datasource.url=jdbc:mysql://localhost:3306/apengenharia
 spring.datasource.username=root
 spring.datasource.password=
 
@@ -510,7 +510,7 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 
-spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.url=jdbc:h2:mem:apengenharia
 spring.datasource.username=sa
 spring.datasource.password=
 spring.datasource.driver-class-name=org.h2.Driver

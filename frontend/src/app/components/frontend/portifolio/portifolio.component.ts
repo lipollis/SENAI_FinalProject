@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-portifolio',
@@ -8,11 +7,7 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class PortifolioComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
-
-  openDialog() {
-    this.dialog.open(PortifolioComponent);
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

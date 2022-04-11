@@ -54,10 +54,10 @@ import { HomeComponent } from './components/frontend/home/home.component';
 import { FooterComponent } from './components/frontend/footer/footer.component';
 import { InfoComponent } from './components/frontend/info/info.component';
 import { SobreComponent } from './components/frontend/sobre/sobre.component';
-import { PortifolioComponent } from './components/frontend/portifolio/portifolio.component';
 import { ServicoComponent } from './components/frontend/servico/servico.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LogoComponent } from './components/frontend/logo/logo.component';
+import { PortifolioComponent } from './components/frontend/portifolio/portifolio.component';
 
 @NgModule({
   declarations: [
@@ -84,9 +84,9 @@ import { LogoComponent } from './components/frontend/logo/logo.component';
     FooterComponent,
     InfoComponent,
     SobreComponent,
-    PortifolioComponent,
     ServicoComponent,
-    LogoComponent
+    LogoComponent,
+    PortifolioComponent
   ],
   imports: [
     BrowserModule,

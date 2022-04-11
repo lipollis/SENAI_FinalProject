@@ -6,7 +6,7 @@ body {
     max-height: 100vh;
     border: 0;
   }
-  
+
 .container-body{
   background-color: var(--backgroud);
   margin: 0 auto;
@@ -36,6 +36,9 @@ div.picsum-img-wrapper{
   padding: 20px; 
 }
 
+img{
+    width: 100%;
+}
 /* ======================================
             RESPONSIVIDADE
 ========================================= */

@@ -105,8 +105,8 @@ ng g c components/frontend/footer
 ng g c components/frontend/menu-home
 ng g c components/frontend/info
 ng g c components/frontend/sobre
-ng g c components/frontend/portifolio-projeto
-ng g c components/frontend/portifolio-servico
+ng g c components/frontend/portifolio
+ng g c components/frontend/servico
 ```
 
 #### Serviço para buscar no backend as informações

@@ -32,8 +32,8 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'login', component: LoginComponent },
   {
-    // path: '', component: BnavComponent, canActivate: [AuthGuard], children: [
-      path: '', component: BnavComponent, children: [
+    path: '', component: BnavComponent, canActivate: [AuthGuard], children: [
+      // path: '', component: BnavComponent, children: [
       { path: 'home', component: BhomeComponent },
 
       { path: 'tecnicos',            component:   TecnicoListComponent },

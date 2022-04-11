@@ -34,6 +34,7 @@ div.container{
  
  .full-width {
     width: 100%;
+    padding: 0;
  }
  
 .btn-submit {
@@ -54,9 +55,9 @@ div.container{
     
  }
 
- /* input{
-    border-bottom: 0.1rem solid blue;
- } */
+ div.mat-form-field-wrapper.ng-tns-c128-1{
+   padding: 0px 0px 0px !important;
+ }
 
 div.mat-form-field-flex.ng-tns-c85-0,
 div.mat-form-field-flex.ng-tns-c85-1{
@@ -67,8 +68,8 @@ div.mat-form-field-suffix.ng-tns-c85-1.ng-star-inserted{
    height: 35px !important;
 }
 
-input,
-input#mat-input-0{
+/* input,
+input#mat-input-0,{
    background-color: #AD8E5E !important;
-}
+} */
 

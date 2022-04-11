@@ -2,12 +2,22 @@
     width: 35rem;
     margin: auto;
     padding: 1rem;
+
     border-radius: .6rem;
  }
  
  .fullWidth {
     width: 100%;
  }
+
+ .container-img{
+   align-items: center;
+   text-align: center;
+}
+.img-perfil{
+   padding: 5%;
+   margin: 0 auto;
+}
  
  h1, p {
     text-align: center;

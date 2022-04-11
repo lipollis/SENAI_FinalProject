@@ -9,6 +9,15 @@
     width: 100%;
  }
  
+ .container-img{
+   align-items: center;
+   text-align: center;
+}
+.img-perfil{
+   padding: 5%;
+   margin: 0 auto;
+}
+
  h1, img, p{
     text-align: center;
  }
